@@ -44,12 +44,12 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative text-sm font-medium tracking-wide transition-colors duration-300 ${
+                className={`relative text-sm font-medium tracking-wide transition-colors duration-300 whitespace-nowrap ${
                   location.pathname === link.path
                     ? 'text-amber-500'
                     : 'text-gray-300 hover:text-amber-400'
