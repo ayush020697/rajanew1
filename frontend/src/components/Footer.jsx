@@ -10,11 +10,16 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <img
-              src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-              alt="Rajan Wines"
-              className="h-16 w-16 object-contain mb-4"
-            />
+            <div className="relative inline-block group mb-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-full blur-md"></div>
+              <div className="relative bg-white/95 backdrop-blur-sm rounded-full p-1 border-2 border-amber-500/30 shadow-lg shadow-amber-900/20">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
+                  alt="Rajan Wines"
+                  className="h-14 w-14 object-contain"
+                />
+              </div>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Premium wines and spirits since 2003. Your trusted partner for authentic, world-class beverages.
             </p>
