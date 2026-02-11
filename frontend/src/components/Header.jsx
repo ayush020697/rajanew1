@@ -36,11 +36,16 @@ export const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <img
-              src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-              alt="Rajan Wines"
-              className="h-16 w-16 object-contain transition-transform duration-300 hover:scale-105"
-            />
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-full blur-md group-hover:blur-lg transition-all duration-300"></div>
+              <div className="relative bg-white/95 backdrop-blur-sm rounded-full p-1 border-2 border-amber-500/30 group-hover:border-amber-500/60 transition-all duration-300 shadow-lg shadow-amber-900/20">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
+                  alt="Rajan Wines"
+                  className="h-14 w-14 object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
