@@ -19,8 +19,8 @@ export const Footer = () => {
                     <img
                       src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
                       alt="Rajan Wines"
-                      className="h-14 w-14 object-contain"
-                    />
+                      className="h-14 w-14 object-contain" />
+
                   </div>
                 </div>
                 
@@ -29,8 +29,8 @@ export const Footer = () => {
                   <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 tracking-wide">
                     Rajan Wines
                   </span>
-                  <span className="text-xs text-gray-500 tracking-widest uppercase">
-                    Since 2003
+                  <span className="text-xs text-gray-500 tracking-widest uppercase">Since 2001
+
                   </span>
                 </div>
               </div>
@@ -102,8 +102,8 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-amber-400 transition-colors duration-300"
-                aria-label="Instagram"
-              >
+                aria-label="Instagram">
+
                 <Instagram size={24} />
               </a>
               <a
@@ -111,8 +111,8 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-amber-400 transition-colors duration-300"
-                aria-label="Facebook"
-              >
+                aria-label="Facebook">
+
                 <Facebook size={24} />
               </a>
               <a
@@ -120,8 +120,8 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-amber-400 transition-colors duration-300"
-                aria-label="Twitter"
-              >
+                aria-label="Twitter">
+
                 <Twitter size={24} />
               </a>
             </div>
@@ -143,6 +143,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
