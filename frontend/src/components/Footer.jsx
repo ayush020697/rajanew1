@@ -10,16 +10,31 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="relative inline-block group mb-4">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-full blur-md"></div>
-              <div className="relative bg-white/95 backdrop-blur-sm rounded-full p-1 border-2 border-amber-500/30 shadow-lg shadow-amber-900/20">
-                <img
-                  src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-                  alt="Rajan Wines"
-                  className="h-14 w-14 object-contain"
-                />
+            <Link to="/" className="inline-block group mb-4">
+              <div className="flex items-center gap-3">
+                {/* Logo Image with Premium Styling */}
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/30 to-amber-600/20 rounded-full blur-lg"></div>
+                  <div className="relative bg-gradient-to-br from-white to-amber-50 rounded-full p-1.5 border-2 border-amber-500/40 shadow-xl shadow-amber-900/30">
+                    <img
+                      src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
+                      alt="Rajan Wines"
+                      className="h-14 w-14 object-contain"
+                    />
+                  </div>
+                </div>
+                
+                {/* Brand Name */}
+                <div className="flex flex-col">
+                  <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 tracking-wide">
+                    Rajan Wines
+                  </span>
+                  <span className="text-xs text-gray-500 tracking-widest uppercase">
+                    Since 2003
+                  </span>
+                </div>
               </div>
-            </div>
+            </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Premium wines and spirits since 2003. Your trusted partner for authentic, world-class beverages.
             </p>

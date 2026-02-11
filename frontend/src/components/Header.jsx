@@ -36,14 +36,27 @@ export const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-full blur-md group-hover:blur-lg transition-all duration-300"></div>
-              <div className="relative bg-white/95 backdrop-blur-sm rounded-full p-1 border-2 border-amber-500/30 group-hover:border-amber-500/60 transition-all duration-300 shadow-lg shadow-amber-900/20">
-                <img
-                  src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-                  alt="Rajan Wines"
-                  className="h-14 w-14 object-contain transition-transform duration-300 group-hover:scale-105"
-                />
+            <div className="flex items-center gap-3 group">
+              {/* Logo Image with Premium Styling */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/30 to-amber-600/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-500"></div>
+                <div className="relative bg-gradient-to-br from-white to-amber-50 rounded-full p-1.5 border-2 border-amber-500/40 group-hover:border-amber-500/70 transition-all duration-500 shadow-xl shadow-amber-900/30 group-hover:shadow-2xl group-hover:shadow-amber-900/50">
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
+                    alt="Rajan Wines"
+                    className="h-14 w-14 object-contain transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
+                  />
+                </div>
+              </div>
+              
+              {/* Brand Name */}
+              <div className="hidden md:flex flex-col">
+                <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 tracking-wide">
+                  Rajan Wines
+                </span>
+                <span className="text-xs text-gray-400 tracking-widest uppercase">
+                  Since 2003
+                </span>
               </div>
             </div>
           </Link>
