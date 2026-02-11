@@ -10,8 +10,8 @@ export const Hero = () => {
         <img
           src="https://images.unsplash.com/photo-1767969217452-3cc1eb722703"
           alt="Premium wines and spirits"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" />
+
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-zinc-950"></div>
       </div>
 
@@ -21,7 +21,7 @@ export const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 rounded-full px-4 py-2 mb-6">
             <Sparkles size={16} className="text-amber-500" />
-            <span className="text-amber-400 text-sm font-medium">Since 2003</span>
+            <span className="text-amber-400 text-sm font-medium">Since 2001</span>
           </div>
 
           {/* Main Heading */}
@@ -43,15 +43,15 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/collection"
-              className="group inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg shadow-amber-900/30 hover:shadow-xl hover:shadow-amber-900/50 hover:-translate-y-0.5"
-            >
+              className="group inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg shadow-amber-900/30 hover:shadow-xl hover:shadow-amber-900/50 hover:-translate-y-0.5">
+
               Explore Collection
               <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
             <Link
               to="/stores"
-              className="inline-flex items-center justify-center gap-2 bg-white/5 backdrop-blur-sm hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-lg border border-white/20 transition-all duration-300 hover:-translate-y-0.5"
-            >
+              className="inline-flex items-center justify-center gap-2 bg-white/5 backdrop-blur-sm hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-lg border border-white/20 transition-all duration-300 hover:-translate-y-0.5">
+
               Find a Store
             </Link>
           </div>
@@ -84,6 +84,6 @@ export const Hero = () => {
           <div className="w-1 h-3 bg-amber-500 rounded-full"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
