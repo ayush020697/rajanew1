@@ -16,22 +16,22 @@ export const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Our Collection', path: '/collection' },
-    { name: 'Stores', path: '/stores' },
-    { name: 'Offers', path: '/offers' },
-    { name: 'Contact', path: '/contact' }
-  ];
+  { name: 'Home', path: '/' },
+  { name: 'About Us', path: '/about' },
+  { name: 'Our Collection', path: '/collection' },
+  { name: 'Stores', path: '/stores' },
+  { name: 'Offers', path: '/offers' },
+  { name: 'Contact', path: '/contact' }];
+
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? 'bg-zinc-950/95 backdrop-blur-md shadow-lg shadow-black/20'
-          : 'bg-transparent'
-      }`}
-    >
+      isScrolled ?
+      'bg-zinc-950/95 backdrop-blur-md shadow-lg shadow-black/20' :
+      'bg-transparent'}`
+      }>
+
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -44,8 +44,8 @@ export const Header = () => {
                   <img
                     src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
                     alt="Rajan Wines"
-                    className="h-14 w-14 object-contain transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-                  />
+                    className="h-14 w-14 object-contain transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3" />
+
                 </div>
               </div>
               
@@ -54,8 +54,8 @@ export const Header = () => {
                 <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 tracking-wide">
                   Rajan Wines
                 </span>
-                <span className="text-xs text-gray-400 tracking-widest uppercase">
-                  Since 2003
+                <span className="text-xs text-gray-400 tracking-widest uppercase">Since 2001
+
                 </span>
               </div>
             </div>
@@ -63,56 +63,56 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`relative text-sm font-medium tracking-wide transition-colors duration-300 whitespace-nowrap ${
-                  location.pathname === link.path
-                    ? 'text-amber-500'
-                    : 'text-gray-300 hover:text-amber-400'
-                }`}
-              >
+            {navLinks.map((link) =>
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`relative text-sm font-medium tracking-wide transition-colors duration-300 whitespace-nowrap ${
+              location.pathname === link.path ?
+              'text-amber-500' :
+              'text-gray-300 hover:text-amber-400'}`
+              }>
+
                 {link.name}
-                {location.pathname === link.path && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-amber-500"></span>
-                )}
+                {location.pathname === link.path &&
+              <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-amber-500"></span>
+              }
               </Link>
-            ))}
+            )}
           </nav>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden text-gray-300 hover:text-amber-400 transition-colors p-2"
-            aria-label="Toggle menu"
-          >
+            aria-label="Toggle menu">
+
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <nav className="lg:hidden pb-4 border-t border-zinc-800 mt-2">
+        {isMobileMenuOpen &&
+        <nav className="lg:hidden pb-4 border-t border-zinc-800 mt-2">
             <div className="flex flex-col space-y-4 pt-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-sm font-medium transition-colors duration-300 ${
-                    location.pathname === link.path
-                      ? 'text-amber-500'
-                      : 'text-gray-300 hover:text-amber-400'
-                  }`}
-                >
+              {navLinks.map((link) =>
+            <Link
+              key={link.path}
+              to={link.path}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`text-sm font-medium transition-colors duration-300 ${
+              location.pathname === link.path ?
+              'text-amber-500' :
+              'text-gray-300 hover:text-amber-400'}`
+              }>
+
                   {link.name}
                 </Link>
-              ))}
+            )}
             </div>
           </nav>
-        )}
+        }
       </div>
-    </header>
-  );
+    </header>);
+
 };
