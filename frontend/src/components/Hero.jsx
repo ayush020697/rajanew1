@@ -20,15 +20,17 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge with Logo - Hero Version */}
           <div className="inline-flex items-center gap-3 bg-zinc-900/40 backdrop-blur-md border border-amber-600/20 rounded-full px-5 py-2.5 mb-6 shadow-lg shadow-black/20">
-            {/* Small Logo Icon */}
+            {/* Small Logo Icon - Perfectly Round */}
             <div className="relative">
               <div className="absolute inset-0 bg-amber-500/10 rounded-full blur-sm"></div>
-              <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-0.5 border border-amber-600/20">
-                <img
-                  src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-                  alt="Rajan Wines"
-                  className="h-6 w-6 object-contain"
-                />
+              <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-1 border border-amber-600/20">
+                <div className="w-6 h-6 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
+                    alt="Rajan Wines"
+                    className="w-5 h-5 object-contain"
+                  />
+                </div>
               </div>
             </div>
             <span className="text-amber-500 text-sm font-medium tracking-wide">Since 2001</span>

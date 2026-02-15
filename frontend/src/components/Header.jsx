@@ -37,16 +37,17 @@ export const Header = () => {
           {/* Logo - Compact Navbar Version */}
           <Link to="/" className="flex-shrink-0">
             <div className="flex items-center gap-3 group">
-              {/* Logo Image with Refined Premium Styling */}
+              {/* Logo Image with Refined Premium Styling - Perfectly Round */}
               <div className="relative">
                 {/* Soft premium halo effect */}
                 <div className="absolute inset-0 bg-amber-500/10 rounded-full blur-sm group-hover:bg-amber-500/15 transition-all duration-500"></div>
-                <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-1 border border-amber-600/20 group-hover:border-amber-500/30 transition-all duration-500 shadow-md shadow-black/10">
-                  <img
-                    src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-                    alt="Rajan Wines"
-                    className="h-12 w-12 object-contain transition-transform duration-500 group-hover:scale-105" />
-
+                <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-2 border border-amber-600/20 group-hover:border-amber-500/30 transition-all duration-500 shadow-md shadow-black/10">
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                    <img
+                      src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
+                      alt="Rajan Wines"
+                      className="w-10 h-10 object-contain transition-transform duration-500 group-hover:scale-105" />
+                  </div>
                 </div>
               </div>
               
