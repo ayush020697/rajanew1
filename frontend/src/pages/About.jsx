@@ -24,7 +24,7 @@ const About = () => {
               About <span className="text-amber-500">Rajan Wines</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Over 20 years of excellence in bringing the world's finest wines and spirits to discerning connoisseurs across India.
+              Over 23 years of excellence in bringing the world's finest wines and spirits to discerning connoisseurs across India.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Since 2003, Rajan Wines has been the premier destination for wine and spirits enthusiasts. What began as a single store in Agra has grown into a trusted network of seven locations across major cities.
+                  Since 2001, Rajan Wines has been the premier destination for wine and spirits enthusiasts. What began as a single store in Agra has grown into a trusted network of seven locations across major cities.
                 </p>
                 <p>
                   Our passion for quality and authenticity drives everything we do. We carefully curate our collection, sourcing directly from renowned distilleries and vineyards worldwide to ensure every bottle meets our exacting standards.
@@ -135,7 +135,7 @@ const About = () => {
                 <p className="text-gray-400">Happy Customers</p>
               </div>
               <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-6">
-                <p className="text-3xl font-bold text-amber-500 mb-2">20+</p>
+                <p className="text-3xl font-bold text-amber-500 mb-2">23+</p>
                 <p className="text-gray-400">Years of Trust</p>
               </div>
             </div>
