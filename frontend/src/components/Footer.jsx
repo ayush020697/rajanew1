@@ -8,35 +8,36 @@ export const Footer = () => {
     <footer className="bg-zinc-950 border-t border-zinc-900">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
+          {/* Brand - Full Logo Version */}
           <div>
             <Link to="/" className="inline-block group mb-4">
               <div className="flex items-center gap-3">
-                {/* Logo Image with Premium Styling */}
+                {/* Logo Image with Refined Premium Styling */}
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/30 to-amber-600/20 rounded-full blur-lg"></div>
-                  <div className="relative bg-gradient-to-br from-white to-amber-50 rounded-full p-1.5 border-2 border-amber-500/40 shadow-xl shadow-amber-900/30">
+                  {/* Soft premium halo effect */}
+                  <div className="absolute inset-0 bg-amber-500/10 rounded-full blur-sm"></div>
+                  <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-1 border border-amber-600/20 shadow-md shadow-black/10">
                     <img
                       src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
                       alt="Rajan Wines"
-                      className="h-14 w-14 object-contain" />
+                      className="h-12 w-12 object-contain" />
 
                   </div>
                 </div>
                 
                 {/* Brand Name */}
                 <div className="flex flex-col">
-                  <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 tracking-wide">
+                  <span className="text-lg font-serif font-semibold text-amber-600 tracking-wide" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     Rajan Wines
                   </span>
-                  <span className="text-xs text-gray-500 tracking-widest uppercase">Since 2001
+                  <span className="text-[10px] text-gray-500 tracking-[0.15em] uppercase font-light">Since 2001
 
                   </span>
                 </div>
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Premium wines and spirits since 2003. Your trusted partner for authentic, world-class beverages.
+              Premium wines and spirits since 2001. Your trusted partner for authentic, world-class beverages.
             </p>
           </div>
 
