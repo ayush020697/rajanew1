@@ -69,7 +69,7 @@ export const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/10">
             <div>
-              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">20+</p>
+              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">23+</p>
               <p className="text-gray-400 text-sm">Years of Excellence</p>
             </div>
             <div>
