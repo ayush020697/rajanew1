@@ -181,7 +181,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold mb-1">Social Media</h3>
-                      <p className="text-gray-400">Follow us @rajanwines</p>
+                      <p className="text-gray-400">Follow us @rajan.wines</p>
                       <p className="text-gray-500 text-sm mt-1">Instagram, Facebook, Twitter</p>
                     </div>
                   </div>
