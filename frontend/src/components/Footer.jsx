@@ -128,7 +128,7 @@ export const Footer = () => {
               </a>
             </div>
             <p className="text-gray-500 text-xs mt-4">
-              @rajanwines
+              @rajan.wines
             </p>
           </div>
         </div>
