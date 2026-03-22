@@ -5,7 +5,7 @@ export const storeLocations = [
     id: 1,
     city: "Agra",
     address: "Shop No. XX, Sector XX, Agra - 282001",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-7983611438",
     timing: "10:00 AM - 10:00 PM",
     coordinates: { lat: 27.1767, lng: 78.0081 }
   },
@@ -13,7 +13,7 @@ export const storeLocations = [
     id: 2,
     city: "Noida",
     address: "Shop No. XX, Sector XX, Noida - 201301",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-7983611438",
     timing: "10:00 AM - 11:00 PM",
     coordinates: { lat: 28.5355, lng: 77.3910 }
   },
@@ -21,7 +21,7 @@ export const storeLocations = [
     id: 3,
     city: "Ghaziabad",
     address: "Shop No. XX, Sector XX, Ghaziabad - 201001",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-7983611438",
     timing: "10:00 AM - 10:00 PM",
     coordinates: { lat: 28.6692, lng: 77.4538 }
   },
@@ -29,7 +29,7 @@ export const storeLocations = [
     id: 4,
     city: "Jaipur",
     address: "Shop No. XX, Sector XX, Jaipur - 302001",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-7983611438",
     timing: "10:00 AM - 10:30 PM",
     coordinates: { lat: 26.9124, lng: 75.7873 }
   },
@@ -37,7 +37,7 @@ export const storeLocations = [
     id: 5,
     city: "Mathura",
     address: "Shop No. XX, Sector XX, Mathura - 281001",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-7983611438",
     timing: "10:00 AM - 10:00 PM",
     coordinates: { lat: 27.4924, lng: 77.6737 }
   },
@@ -45,7 +45,7 @@ export const storeLocations = [
     id: 6,
     city: "Hathras",
     address: "Shop No. XX, Sector XX, Hathras - 204101",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-7983611438",
     timing: "10:00 AM - 9:30 PM",
     coordinates: { lat: 27.5950, lng: 78.0500 }
   },
@@ -53,7 +53,7 @@ export const storeLocations = [
     id: 7,
     city: "Farrukhabad",
     address: "Shop No. XX, Sector XX, Farrukhabad - 209625",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-7983611438",
     timing: "10:00 AM - 10:00 PM",
     coordinates: { lat: 27.3882, lng: 79.5799 }
   }
@@ -228,9 +228,9 @@ export const whyChooseUs = [
 ];
 
 export const socialMedia = {
-  instagram: "https://instagram.com/rajanwines",
+  instagram: "https://instagram.com/rajan.wines",
   facebook: "https://facebook.com/rajanwines",
   twitter: "https://twitter.com/rajanwines",
-  email: "support@rajanwines.com",
-  phone: "+91-XXXXXXXXXX"
+  email: "rajanwines2001@gmail.com",
+  phone: "+91-7983611438"
 };
