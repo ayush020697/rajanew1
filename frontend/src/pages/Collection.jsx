@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { productCategories, featuredProducts } from '../mock';
@@ -140,9 +141,13 @@ const Collection = () => {
             <p className="text-gray-400 text-lg mb-8">
               Visit any of our stores and our expert staff will help you find the perfect bottle for any occasion.
             </p>
-            <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-300 shadow-lg shadow-amber-900/30 hover:shadow-xl hover:shadow-amber-900/50">
+            <Link
+              to="/contact"
+              data-testid="collection-contact-us-button"
+              className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-300 shadow-lg shadow-amber-900/30 hover:shadow-xl hover:shadow-amber-900/50">
               Contact Us
-            </button>
+              <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>

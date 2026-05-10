@@ -7,11 +7,13 @@ import Stores from "./pages/Stores";
 import Offers from "./pages/Offers";
 import Contact from "./pages/Contact";
 import ResponsibleDrinking from "./pages/ResponsibleDrinking";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
