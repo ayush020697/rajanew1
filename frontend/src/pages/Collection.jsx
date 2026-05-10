@@ -116,7 +116,7 @@ const Collection = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-amber-500 text-sm font-medium">
-                      {category.count}+ varieties
+                      {category.count}
                     </span>
                     <ArrowRight
                       size={20}

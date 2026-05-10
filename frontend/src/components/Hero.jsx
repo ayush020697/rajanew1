@@ -45,6 +45,14 @@ export const Hero = () => {
             </span>
           </h1>
 
+          {/* Premium Tagline */}
+          <p
+            data-testid="hero-tagline"
+            className="text-2xl md:text-3xl mb-6 font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-500 to-amber-300 tracking-wide"
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            “Great Drinks, Great Times — Only at Rajan Wines”
+          </p>
+
           {/* Subtitle */}
           <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
             Discover an exquisite collection of world-class wines and spirits. 
@@ -70,19 +78,19 @@ export const Hero = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/10">
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">23+</p>
+            <div data-testid="hero-stat-years">
+              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">25+</p>
               <p className="text-gray-400 text-sm">Years of Excellence</p>
             </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">7</p>
+            <div data-testid="hero-stat-stores">
+              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">50+</p>
               <p className="text-gray-400 text-sm">Store Locations</p>
             </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">275+</p>
+            <div data-testid="hero-stat-brands">
+              <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">1000+</p>
               <p className="text-gray-400 text-sm">Premium Brands</p>
             </div>
-            <div>
+            <div data-testid="hero-stat-authentic">
               <p className="text-3xl md:text-4xl font-bold text-amber-500 mb-1">100%</p>
               <p className="text-gray-400 text-sm">Authentic Products</p>
             </div>

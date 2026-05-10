@@ -1,158 +1,269 @@
 // Mock data for Rajan Wines
 
+export const warehouseOffice = {
+  title: "Warehouse Office",
+  address: "Rajan Wines Warehouse, 61 Sector 3, Transport Nagar, Agra (UP) 282002",
+  phone: "+91-7983611438",
+  timing: "10:00 AM - 10:00 PM"
+};
+
+export const corporateOffice = {
+  title: "Corporate Office",
+  address: "Rajan Wines, 225 Jaipur House, Agra (UP) 282010",
+  phone: "+91-7983611438",
+  timing: "10:00 AM - 7:00 PM"
+};
+
 export const storeLocations = [
   {
     id: 1,
+    name: "Rajan Model Shop",
+    area: "Ajmer Road, Pratapura",
     city: "Agra",
-    address: "Shop No. XX, Sector XX, Agra - 282001",
+    address: "Ajmer Road, Pratapura, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM",
-    coordinates: { lat: 27.1767, lng: 78.0081 }
+    timing: "10:00 AM - 10:00 PM"
   },
   {
     id: 2,
-    city: "Noida",
-    address: "Shop No. XX, Sector XX, Noida - 201301",
+    name: "Rajan Model Shop",
+    area: "Sultanganj Crossing",
+    city: "Agra",
+    address: "Sultanganj Crossing, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 11:00 PM",
-    coordinates: { lat: 28.5355, lng: 77.3910 }
+    timing: "10:00 AM - 10:00 PM"
   },
   {
     id: 3,
-    city: "Ghaziabad",
-    address: "Shop No. XX, Sector XX, Ghaziabad - 201001",
+    name: "Rajan Wine & Beer Shop",
+    area: "Lawyers Colony",
+    city: "Agra",
+    address: "Lawyers Colony, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM",
-    coordinates: { lat: 28.6692, lng: 77.4538 }
+    timing: "10:00 AM - 10:00 PM"
   },
   {
     id: 4,
-    city: "Jaipur",
-    address: "Shop No. XX, Sector XX, Jaipur - 302001",
+    name: "Rajan Wine & Beer Shop",
+    area: "Collectrate Chauraha",
+    city: "Agra",
+    address: "Collectrate Chauraha, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:30 PM",
-    coordinates: { lat: 26.9124, lng: 75.7873 }
+    timing: "10:00 AM - 10:00 PM"
   },
   {
     id: 5,
-    city: "Mathura",
-    address: "Shop No. XX, Sector XX, Mathura - 281001",
+    name: "Rajan Wine & Beer Shop",
+    area: "Sector Gama",
+    city: "Greater Noida",
+    address: "Sector Gama, Greater Noida",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM",
-    coordinates: { lat: 27.4924, lng: 77.6737 }
+    timing: "10:00 AM - 11:00 PM"
   },
   {
     id: 6,
-    city: "Hathras",
-    address: "Shop No. XX, Sector XX, Hathras - 204101",
+    name: "Rajan Wine & Beer Shop",
+    area: "Raj Nagar",
+    city: "Ghaziabad",
+    address: "Raj Nagar, Ghaziabad",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 9:30 PM",
-    coordinates: { lat: 27.5950, lng: 78.0500 }
+    timing: "10:00 AM - 10:00 PM"
   },
   {
     id: 7,
+    name: "Rajan Model Shop",
+    area: "Railway Road",
     city: "Farrukhabad",
-    address: "Shop No. XX, Sector XX, Farrukhabad - 209625",
+    address: "Railway Road, Farrukhabad",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM",
-    coordinates: { lat: 27.3882, lng: 79.5799 }
+    timing: "10:00 AM - 10:00 PM"
+  },
+  {
+    id: 8,
+    name: "Rajan Wine & Beer Shop",
+    area: "Lal Saray",
+    city: "Farrukhabad",
+    address: "Lal Saray, Farrukhabad",
+    phone: "+91-7983611438",
+    timing: "10:00 AM - 10:00 PM"
+  },
+  {
+    id: 9,
+    name: "Rajan Wine Shop",
+    area: "Biswar",
+    city: "Hathras",
+    address: "Biswar, Hathras",
+    phone: "+91-7983611438",
+    timing: "10:00 AM - 9:30 PM"
+  },
+  {
+    id: 10,
+    name: "Rajan Model Shop",
+    area: "Daresi No. 1",
+    city: "Agra",
+    address: "Daresi No. 1, Agra",
+    phone: "+91-7983611438",
+    timing: "10:00 AM - 10:00 PM"
+  },
+  {
+    id: 11,
+    name: "Rajan Wine & Beer Shop",
+    area: "Motilal Nehru Road",
+    city: "Agra",
+    address: "Motilal Nehru Road, Agra",
+    phone: "+91-7983611438",
+    timing: "10:00 AM - 10:00 PM"
   }
 ];
 
 export const productCategories = [
   {
     id: 1,
-    name: "Whisky",
+    name: "Whiskey",
     description: "Premium single malts and blended whiskies from around the world",
     image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
-    count: 50
+    count: "200+ Variants"
   },
   {
     id: 2,
-    name: "Red Wine",
-    description: "Exquisite red wines from renowned vineyards",
-    image: "https://images.unsplash.com/photo-1714377769989-140c9e47fbb9",
-    count: 45
+    name: "Scotch & Single Malt",
+    description: "Rare Scotch whiskies and refined single malts for the connoisseur",
+    image: "https://images.unsplash.com/photo-1767217667288-8b50f1dc2103",
+    count: "100+ Variants"
   },
   {
     id: 3,
-    name: "White Wine",
-    description: "Crisp and refreshing white wines for every occasion",
-    image: "https://images.unsplash.com/photo-1769521838105-5d68119e88be",
-    count: 35
+    name: "Wine",
+    description: "Exquisite red, white, sparkling and dessert wines from celebrated vineyards",
+    image: "https://images.unsplash.com/photo-1714377769989-140c9e47fbb9",
+    count: "50+ Variants"
   },
   {
     id: 4,
-    name: "Sparkling Wine",
-    description: "Celebrate life's moments with premium champagne and prosecco",
-    image: "https://images.unsplash.com/photo-1713664060730-fe94cb5df25d",
-    count: 25
+    name: "Vodka",
+    description: "Crystal clear premium vodkas for the perfect cocktail",
+    image: "https://images.unsplash.com/photo-1759912316272-a414bf146476",
+    count: "50+ Variants"
   },
   {
     id: 5,
-    name: "Vodka",
-    description: "Crystal clear premium vodkas for the perfect mix",
-    image: "https://images.unsplash.com/photo-1759912316272-a414bf146476",
-    count: 30
-  },
-  {
-    id: 6,
     name: "Rum",
     description: "Rich and smooth rums from the Caribbean and beyond",
     image: "https://images.unsplash.com/photo-1674916084024-50cdd3f6b864",
-    count: 28
+    count: "50+ Variants"
   },
   {
-    id: 7,
+    id: 6,
     name: "Gin",
     description: "Botanical gins for craft cocktail enthusiasts",
     image: "https://images.unsplash.com/photo-1737029114889-8f5edb15b8be",
-    count: 22
+    count: "50+ Variants"
+  },
+  {
+    id: 7,
+    name: "Beer",
+    description: "Premium craft, lager and imported beers from across the globe",
+    image: "https://images.unsplash.com/photo-1732525819066-88074e2d2748",
+    count: "100+ Variants"
   },
   {
     id: 8,
-    name: "Beer",
-    description: "Premium craft and imported beers",
-    image: "https://images.unsplash.com/photo-1732525819066-88074e2d2748",
-    count: 40
+    name: "Liquor",
+    description: "Specialty liqueurs and aperitifs for a refined palate",
+    image: "https://images.unsplash.com/photo-1713664060730-fe94cb5df25d",
+    count: "20+ Variants"
   }
 ];
 
 export const featuredProducts = [
   {
     id: 1,
-    name: "Jack Daniel's Single Barrel",
-    category: "Whisky",
-    origin: "Tennessee, USA",
-    description: "Hand-selected single barrel Tennessee whiskey",
-    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
+    name: "Glenlivet 18 Years",
+    category: "Single Malt",
+    origin: "Speyside, Scotland",
+    description: "Aged 18 years for unrivalled depth, with notes of orange marmalade and toasted oak",
+    image: "https://images.unsplash.com/photo-1767217667288-8b50f1dc2103",
     featured: true
   },
   {
     id: 2,
-    name: "Château Reserve",
-    category: "Red Wine",
-    origin: "Bordeaux, France",
-    description: "Full-bodied red wine with rich tannins",
-    image: "https://images.unsplash.com/photo-1714377769989-140c9e47fbb9",
+    name: "Indri Single Malt",
+    category: "Single Malt",
+    origin: "Haryana, India",
+    description: "World-acclaimed Indian single malt with rich tropical fruit and warm spice character",
+    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
     featured: true
   },
   {
     id: 3,
-    name: "Grey Goose",
-    category: "Vodka",
-    origin: "France",
-    description: "Premium French wheat vodka",
-    image: "https://images.unsplash.com/photo-1759912316272-a414bf146476",
+    name: "Jack Daniel's Black",
+    category: "Whiskey",
+    origin: "Tennessee, USA",
+    description: "Iconic charcoal-mellowed Tennessee whiskey with smooth caramel and vanilla finish",
+    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
     featured: true
   },
   {
     id: 4,
-    name: "Ardbeg Corryvreckan",
-    category: "Whisky",
-    origin: "Islay, Scotland",
-    description: "Peaty single malt Scotch whisky",
+    name: "JW Blue Label",
+    category: "Blended Scotch",
+    origin: "Scotland",
+    description: "Johnnie Walker's flagship blend — exceptional rare whiskies layered to perfection",
     image: "https://images.unsplash.com/photo-1767217667288-8b50f1dc2103",
+    featured: true
+  },
+  {
+    id: 5,
+    name: "Grey Goose",
+    category: "Vodka",
+    origin: "France",
+    description: "Premium French wheat vodka, distilled and bottled in the Cognac region",
+    image: "https://images.unsplash.com/photo-1759912316272-a414bf146476",
+    featured: true
+  },
+  {
+    id: 6,
+    name: "Jaisalmer Black Gin",
+    category: "Gin",
+    origin: "Rajasthan, India",
+    description: "Bold Indian craft gin layered with Himalayan juniper and exotic native botanicals",
+    image: "https://images.unsplash.com/photo-1737029114889-8f5edb15b8be",
+    featured: true
+  },
+  {
+    id: 7,
+    name: "Jägermeister",
+    category: "Liquor",
+    origin: "Germany",
+    description: "Iconic herbal liqueur crafted from 56 botanicals — best served ice cold",
+    image: "https://images.unsplash.com/photo-1713664060730-fe94cb5df25d",
+    featured: true
+  },
+  {
+    id: 8,
+    name: "Sangam",
+    category: "Indian Whiskey",
+    origin: "India",
+    description: "Distinctive Indian whiskey — smooth, mellow and remarkably balanced",
+    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
+    featured: true
+  },
+  {
+    id: 9,
+    name: "Singha",
+    category: "Beer",
+    origin: "Thailand",
+    description: "Thailand's premium lager — crisp, refreshing and full-bodied",
+    image: "https://images.unsplash.com/photo-1732525819066-88074e2d2748",
+    featured: true
+  },
+  {
+    id: 10,
+    name: "Hoegaarden",
+    category: "Breezer / Pint",
+    origin: "Belgium",
+    description: "Classic Belgian wheat beer with hints of coriander and orange peel",
+    image: "https://images.unsplash.com/photo-1732525819066-88074e2d2748",
     featured: true
   }
 ];
@@ -160,29 +271,29 @@ export const featuredProducts = [
 export const offers = [
   {
     id: 1,
-    title: "Premium Selection",
-    description: "Flat 15% off on premium whisky collection",
-    validUntil: "Limited Time Offer",
-    category: "Whisky"
+    title: "Corporate Offers",
+    description: "Exclusive corporate pricing & curated gifting bundles for businesses",
+    validUntil: "Year Round",
+    category: "Corporate"
   },
   {
     id: 2,
-    title: "Wine Festival",
-    description: "Buy 2 Get 1 on selected wine bottles",
-    validUntil: "Valid till 31st Dec",
-    category: "Wine"
+    title: "For Marriage & Special Occasions",
+    description: "",
+    validUntil: "On Request",
+    category: "Events"
   },
   {
     id: 3,
-    title: "Party Starter",
-    description: "Special combo offers on vodka and mixers",
+    title: "Party Offers",
+    description: "Special Combo Offers",
     validUntil: "Weekend Special",
-    category: "Vodka"
+    category: "Party"
   },
   {
     id: 4,
     title: "Membership Benefits",
-    description: "Join our loyalty program for exclusive deals",
+    description: "Join our loyalty program for exclusive deals and priority access",
     validUntil: "Year Round",
     category: "All"
   }
@@ -221,8 +332,8 @@ export const whyChooseUs = [
   },
   {
     id: 6,
-    title: "Since 2003",
-    description: "Over 20 years of trust and excellence in the industry",
+    title: "Variety of Premium Brands",
+    description: "1000+ premium brands across whiskey, wine, vodka, gin, rum and more",
     icon: "clock"
   }
 ];

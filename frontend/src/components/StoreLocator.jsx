@@ -36,13 +36,15 @@ export const StoreLocator = () => {
 
         {/* Store Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {storeLocations.map((store) => (
+          {storeLocations.slice(0, 8).map((store) => (
             <div
               key={store.id}
+              data-testid={`store-card-${store.id}`}
               className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-900/20"
             >
-              {/* City Name */}
-              <h3 className="text-2xl font-bold text-amber-500 mb-4">{store.city}</h3>
+              {/* Store Name */}
+              <h3 className="text-xl font-bold text-amber-500 mb-1 leading-snug">{store.name}</h3>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-4">{store.city}</p>
 
               {/* Details */}
               <div className="space-y-3">
@@ -61,10 +63,14 @@ export const StoreLocator = () => {
               </div>
 
               {/* Get Directions Button */}
-              <button className="mt-6 w-full flex items-center justify-center gap-2 bg-amber-600/10 hover:bg-amber-600 text-amber-500 hover:text-white font-medium py-2.5 px-4 rounded-lg border border-amber-600/30 hover:border-amber-600 transition-all duration-300">
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 w-full flex items-center justify-center gap-2 bg-amber-600/10 hover:bg-amber-600 text-amber-500 hover:text-white font-medium py-2.5 px-4 rounded-lg border border-amber-600/30 hover:border-amber-600 transition-all duration-300">
                 <Navigation size={16} />
                 <span>Get Directions</span>
-              </button>
+              </a>
             </div>
           ))}
         </div>

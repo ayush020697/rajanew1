@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { offers } from '../mock';
@@ -44,9 +45,11 @@ const Offers = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
             {offers.map((offer) => (
-              <div
+              <Link
                 key={offer.id}
-                className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-900/20"
+                to="/contact"
+                data-testid={`offers-page-card-${offer.id}`}
+                className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-900/20 cursor-pointer block"
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="bg-amber-500/10 p-4 rounded-xl">
@@ -61,17 +64,19 @@ const Offers = () => {
                   {offer.title}
                 </h3>
                 
-                <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                  {offer.description}
-                </p>
+                {offer.description && (
+                  <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+                    {offer.description}
+                  </p>
+                )}
                 
-                <div className="flex items-center gap-2 text-gray-400 text-sm border-t border-zinc-800 pt-4">
+                <div className="flex items-center gap-2 text-gray-400 text-sm border-t border-zinc-800 pt-4 mt-6">
                   <Calendar size={16} className="text-amber-500" />
                   <span>{offer.validUntil}</span>
                 </div>
 
                 <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-bl-full"></div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

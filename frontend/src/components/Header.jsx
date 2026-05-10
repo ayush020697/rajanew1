@@ -41,22 +41,23 @@ export const Header = () => {
               <div className="relative">
                 {/* Soft premium halo effect */}
                 <div className="absolute inset-0 bg-amber-500/10 rounded-full blur-sm group-hover:bg-amber-500/15 transition-all duration-500"></div>
-                <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-2 border border-amber-600/20 group-hover:border-amber-500/30 transition-all duration-500 shadow-md shadow-black/10">
-                  <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-2 sm:p-2.5 border border-amber-600/20 group-hover:border-amber-500/30 transition-all duration-500 shadow-md shadow-black/10">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden flex items-center justify-center bg-white">
                     <img
                       src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
                       alt="Rajan Wines"
-                      className="w-10 h-10 object-contain transition-transform duration-500 group-hover:scale-105" />
+                      className="w-14 h-14 sm:w-[72px] sm:h-[72px] object-contain transition-transform duration-500 group-hover:scale-105"
+                      data-testid="header-logo-image" />
                   </div>
                 </div>
               </div>
               
               {/* Brand Name - Desktop Only, Hidden on Mobile */}
               <div className="hidden lg:flex flex-col">
-                <span className="text-lg font-serif font-semibold text-amber-600 tracking-wide" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <span className="text-2xl font-serif font-semibold text-amber-600 tracking-wide" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Rajan Wines
                 </span>
-                <span className="text-[10px] text-gray-500 tracking-[0.15em] uppercase font-light">Since 2001
+                <span className="text-[11px] text-gray-500 tracking-[0.15em] uppercase font-light">Since 2001
 
                 </span>
               </div>

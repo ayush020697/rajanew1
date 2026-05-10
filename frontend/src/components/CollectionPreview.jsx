@@ -44,8 +44,8 @@ export const CollectionPreview = () => {
                   {category.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-amber-500 text-sm font-medium">
-                    {category.count}+ varieties
+                  <span className="text-amber-500 text-sm font-medium" data-testid={`category-count-${category.id}`}>
+                    {category.count}
                   </span>
                   <ArrowRight
                     size={20}

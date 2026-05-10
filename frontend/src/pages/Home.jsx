@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { AgeVerification } from '../components/AgeVerification';
@@ -6,8 +7,8 @@ import { Hero } from '../components/Hero';
 import { CollectionPreview } from '../components/CollectionPreview';
 import { WhyChooseUs } from '../components/WhyChooseUs';
 import { StoreLocator } from '../components/StoreLocator';
-import { featuredProducts, offers } from '../mock';
-import { Tag, Calendar, ArrowRight } from 'lucide-react';
+import { offers } from '../mock';
+import { Tag, Calendar } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -32,9 +33,11 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {offers.map((offer) => (
-              <div
+              <Link
                 key={offer.id}
-                className="group relative bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-900/20"
+                to="/contact"
+                data-testid={`home-offer-card-${offer.id}`}
+                className="group relative bg-zinc-950 border border-zinc-800 rounded-xl p-6 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-900/20 cursor-pointer block"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="bg-amber-500/10 p-3 rounded-lg">
@@ -48,15 +51,17 @@ const Home = () => {
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors duration-300">
                   {offer.title}
                 </h3>
-                <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-                  {offer.description}
-                </p>
+                {offer.description && (
+                  <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                    {offer.description}
+                  </p>
+                )}
                 
-                <div className="flex items-center gap-2 text-gray-500 text-xs">
+                <div className="flex items-center gap-2 text-gray-500 text-xs mt-4">
                   <Calendar size={14} />
                   <span>{offer.validUntil}</span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

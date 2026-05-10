@@ -6,6 +6,18 @@ Premium liquor store website for Rajan Wines with elegant dark theme, wine red &
 **Date Started:** February 10, 2026
 **Project Type:** Informational Website (Frontend-only MVP)
 
+
+## Changelog
+- **Feb 10, 2026** - Logo refinement (circular, muted gold, halo, Cormorant Garamond serif), contact info standardised.
+- **Feb 10, 2026** - Content & UX overhaul:
+  - Header: enlarged premium circular logo (w-16/w-20).
+  - Hero: new tagline "Great Drinks, Great Times — Only at Rajan Wines"; stats updated to 25+ Years / 50+ Stores / 1000+ Brands / 100% Authentic.
+  - Collection: merged all wine variants into single "Wine — 50+"; updated counts (Whiskey 200+, Scotch & Single Malt 100+, Vodka 50+, Rum 50+, Gin 50+, Beer 100+); added new "Liquor 20+" category.
+  - Why Choose Us: "Since 2001" tile replaced with "Variety of Premium Brands".
+  - Special Offers: cards renamed → Corporate Offers, For Marriage & Special Occasions (no description), Party Offers (Special Combo Offers), Membership Benefits — all cards now redirect to /contact on click (both Home and /offers).
+  - Stores page: added prominent Corporate Office (225 Jaipur House, Agra) & Warehouse Office (61 Sector 3, Transport Nagar, Agra) cards; replaced previous 7 generic city stores with 11 real branch cards (Rajan Model Shop / Rajan Wine & Beer Shop / Rajan Wine Shop) across Agra, Greater Noida, Ghaziabad, Farrukhabad, Hathras.
+  - Get Directions buttons now deep-link to Google Maps search; Call Store deep-links via tel:.
+
 ---
 
 ## Original Problem Statement
