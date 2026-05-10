@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { storeLocations, warehouseOffice, corporateOffice } from '../mock';
+import { StoreMap } from '../components/StoreMap';
 import { MapPin, Phone, Clock, Navigation, Building2, Warehouse } from 'lucide-react';
 
 const Stores = () => {
@@ -90,25 +91,14 @@ const Stores = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Interactive Map */}
       <section className="py-12 bg-zinc-950">
         <div className="container mx-auto px-4">
-          <div className="rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl mb-12">
-            <div className="relative bg-zinc-900 aspect-[21/9] flex items-center justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=1200&h=600&fit=crop"
-                alt="Store locations map"
-                className="w-full h-full object-cover opacity-30"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin size={64} className="text-amber-500 mx-auto mb-4" />
-                  <p className="text-gray-400 text-xl">Interactive Map Coming Soon</p>
-                  <p className="text-gray-500 text-sm mt-2">Find your nearest Rajan Wines store</p>
-                </div>
-              </div>
-            </div>
+          <div className="mb-4 text-center">
+            <p className="text-amber-500 text-sm uppercase tracking-[0.3em] font-medium mb-2">Find Us On Map</p>
+            <p className="text-gray-400 text-sm">Tap any pin to view shop details and get directions</p>
           </div>
+          <StoreMap height="560px" />
         </div>
       </section>
 

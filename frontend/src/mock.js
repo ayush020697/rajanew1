@@ -4,14 +4,16 @@ export const warehouseOffice = {
   title: "Warehouse Office",
   address: "Rajan Wines Warehouse, 61 Sector 3, Transport Nagar, Agra (UP) 282002",
   phone: "+91-7983611438",
-  timing: "10:00 AM - 10:00 PM"
+  timing: "10:00 AM - 10:00 PM",
+  coordinates: { lat: 27.2107, lng: 78.0410 }
 };
 
 export const corporateOffice = {
   title: "Corporate Office",
   address: "Rajan Wines, 225 Jaipur House, Agra (UP) 282010",
   phone: "+91-7983611438",
-  timing: "10:00 AM - 7:00 PM"
+  timing: "10:00 AM - 7:00 PM",
+  coordinates: { lat: 27.1620, lng: 77.9870 }
 };
 
 export const storeLocations = [
@@ -22,7 +24,8 @@ export const storeLocations = [
     city: "Agra",
     address: "Ajmer Road, Pratapura, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.2010, lng: 77.9990 }
   },
   {
     id: 2,
@@ -31,7 +34,8 @@ export const storeLocations = [
     city: "Agra",
     address: "Sultanganj Crossing, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.1755, lng: 78.0023 }
   },
   {
     id: 3,
@@ -40,7 +44,8 @@ export const storeLocations = [
     city: "Agra",
     address: "Lawyers Colony, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.1980, lng: 78.0050 }
   },
   {
     id: 4,
@@ -49,7 +54,8 @@ export const storeLocations = [
     city: "Agra",
     address: "Collectrate Chauraha, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.1830, lng: 78.0080 }
   },
   {
     id: 5,
@@ -58,7 +64,8 @@ export const storeLocations = [
     city: "Greater Noida",
     address: "Sector Gama, Greater Noida",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 11:00 PM"
+    timing: "10:00 AM - 11:00 PM",
+    coordinates: { lat: 28.4716, lng: 77.5060 }
   },
   {
     id: 6,
@@ -67,7 +74,8 @@ export const storeLocations = [
     city: "Ghaziabad",
     address: "Raj Nagar, Ghaziabad",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 28.6845, lng: 77.4320 }
   },
   {
     id: 7,
@@ -76,7 +84,8 @@ export const storeLocations = [
     city: "Farrukhabad",
     address: "Railway Road, Farrukhabad",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.3920, lng: 79.5790 }
   },
   {
     id: 8,
@@ -85,7 +94,8 @@ export const storeLocations = [
     city: "Farrukhabad",
     address: "Lal Saray, Farrukhabad",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.4000, lng: 79.5900 }
   },
   {
     id: 9,
@@ -94,7 +104,8 @@ export const storeLocations = [
     city: "Hathras",
     address: "Biswar, Hathras",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 9:30 PM"
+    timing: "10:00 AM - 9:30 PM",
+    coordinates: { lat: 27.5980, lng: 78.0510 }
   },
   {
     id: 10,
@@ -103,7 +114,8 @@ export const storeLocations = [
     city: "Agra",
     address: "Daresi No. 1, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.1810, lng: 78.0190 }
   },
   {
     id: 11,
@@ -112,7 +124,8 @@ export const storeLocations = [
     city: "Agra",
     address: "Motilal Nehru Road, Agra",
     phone: "+91-7983611438",
-    timing: "10:00 AM - 10:00 PM"
+    timing: "10:00 AM - 10:00 PM",
+    coordinates: { lat: 27.1730, lng: 78.0050 }
   }
 ];
 

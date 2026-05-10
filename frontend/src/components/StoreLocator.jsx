@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
 import { storeLocations } from '../mock';
+import { StoreMap } from './StoreMap';
 
 export const StoreLocator = () => {
   return (
@@ -17,21 +18,9 @@ export const StoreLocator = () => {
           </p>
         </div>
 
-        {/* Map Placeholder */}
-        <div className="mb-12 rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
-          <div className="relative bg-zinc-900 aspect-[21/9] flex items-center justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=1200&h=600&fit=crop"
-              alt="Store locations map"
-              className="w-full h-full object-cover opacity-30"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin size={48} className="text-amber-500 mx-auto mb-4" />
-                <p className="text-gray-400 text-lg">Interactive map coming soon</p>
-              </div>
-            </div>
-          </div>
+        {/* Interactive Map */}
+        <div className="mb-12">
+          <StoreMap height="480px" />
         </div>
 
         {/* Store Cards */}
