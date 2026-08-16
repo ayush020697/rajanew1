@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { X, Wine } from 'lucide-react';
+import { Wine } from 'lucide-react';
+import { OptimizedImage } from './OptimizedImage';
+import { imageAssets } from '../lib/images';
 
 export const AgeVerification = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,9 +43,15 @@ export const AgeVerification = () => {
           </p>
 
           {/* Logo */}
-          <img
-            src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-            alt="Rajan Wines"
+          <OptimizedImage
+            imageId={imageAssets.logo.id}
+            alt={imageAssets.logo.alt}
+            width={160}
+            height={160}
+            sizes="80px"
+            widths={[80, 160]}
+            loading="eager"
+            wrapperClassName="h-20 w-20 mx-auto mb-6 bg-zinc-900"
             className="h-20 w-20 object-contain mx-auto mb-6"
           />
 

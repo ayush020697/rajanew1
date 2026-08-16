@@ -2,6 +2,8 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Award, Users, Target, Heart } from 'lucide-react';
+import { OptimizedImage } from '../components/OptimizedImage';
+import { imageAssets } from '../lib/images';
 
 const About = () => {
   return (
@@ -11,9 +13,14 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1627503607711-3b427348cbd7"
-            alt="About Rajan Wines"
+          <OptimizedImage
+            imageId={imageAssets.aboutHero.id}
+            alt={imageAssets.aboutHero.alt}
+            width={imageAssets.aboutHero.width}
+            height={imageAssets.aboutHero.height}
+            sizes="100vw"
+            widths={[640, 960, 1280, 1600]}
+            wrapperClassName="w-full h-full"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -52,9 +59,14 @@ const About = () => {
             </div>
             
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1758790121744-0ead6c5e63fe"
-                alt="Our collection"
+              <OptimizedImage
+                imageId={imageAssets.aboutStory.id}
+                alt={imageAssets.aboutStory.alt}
+                width={imageAssets.aboutStory.width}
+                height={imageAssets.aboutStory.height}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                widths={[480, 640, 900]}
+                wrapperClassName="rounded-xl shadow-2xl"
                 className="rounded-xl shadow-2xl"
               />
             </div>

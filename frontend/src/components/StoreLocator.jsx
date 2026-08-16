@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
 import { storeLocations } from '../mock';
-import { StoreMap } from './StoreMap';
+import { LazyStoreMap } from './LazyStoreMap';
 
 export const StoreLocator = () => {
   return (
@@ -20,7 +20,7 @@ export const StoreLocator = () => {
 
         {/* Interactive Map */}
         <div className="mb-12">
-          <StoreMap height="480px" />
+          <LazyStoreMap height="480px" />
         </div>
 
         {/* Store Cards */}

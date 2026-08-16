@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { storeLocations, warehouseOffice, corporateOffice } from '../mock';
-import { StoreMap } from '../components/StoreMap';
+import { LazyStoreMap } from '../components/LazyStoreMap';
 import { MapPin, Phone, Clock, Navigation, Building2, Warehouse } from 'lucide-react';
 
 const Stores = () => {
@@ -98,7 +98,7 @@ const Stores = () => {
             <p className="text-amber-500 text-sm uppercase tracking-[0.3em] font-medium mb-2">Find Us On Map</p>
             <p className="text-gray-400 text-sm">Tap any pin to view shop details and get directions</p>
           </div>
-          <StoreMap height="560px" />
+          <LazyStoreMap height="560px" />
         </div>
       </section>
 

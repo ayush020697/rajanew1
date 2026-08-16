@@ -4,7 +4,7 @@ import { Footer } from '../components/Footer';
 import { MapPin, Phone, Mail, MessageSquare, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
 import { socialMedia } from '../mock';
 
-const API_BASE = process.env.REACT_APP_BACKEND_URL;
+const API_BASE = (process.env.REACT_APP_BACKEND_URL || "").replace(/\/+$/, "");
 
 const initialForm = {
   first_name: '',
@@ -47,6 +47,13 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
+    if (!API_BASE) {
+      setStatus({
+        state: 'error',
+        message: 'Contact service is not configured. Please try again later.',
+      });
+      return;
+    }
     setStatus({ state: 'submitting', message: '' });
     try {
       const res = await fetch(`${API_BASE}/api/contact`, {

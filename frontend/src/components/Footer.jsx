@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 import { socialMedia } from '../mock';
+import { OptimizedImage } from './OptimizedImage';
+import { imageAssets } from '../lib/images';
 
 export const Footer = () => {
   return (
@@ -18,9 +20,14 @@ export const Footer = () => {
                   <div className="absolute inset-0 bg-amber-500/10 rounded-full blur-sm"></div>
                   <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-2 border border-amber-600/20 shadow-md shadow-black/10">
                     <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white">
-                      <img
-                        src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-                        alt="Rajan Wines"
+                      <OptimizedImage
+                        imageId={imageAssets.logo.id}
+                        alt={imageAssets.logo.alt}
+                        width={80}
+                        height={80}
+                        sizes="40px"
+                        widths={[40, 80]}
+                        wrapperClassName="w-10 h-10 bg-white"
                         className="w-10 h-10 object-contain" />
                     </div>
                   </div>

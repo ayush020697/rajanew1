@@ -1,16 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Sparkles } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import { OptimizedImage } from './OptimizedImage';
+import { imageAssets } from '../lib/images';
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1767969217452-3cc1eb722703"
-          alt="Premium wines and spirits"
-          className="w-full h-full object-cover" />
+        <OptimizedImage
+          imageId={imageAssets.homeHero.id}
+          alt={imageAssets.homeHero.alt}
+          width={imageAssets.homeHero.width}
+          height={imageAssets.homeHero.height}
+          sizes="100vw"
+          widths={[640, 960, 1280, 1600, 2000]}
+          loading="eager"
+          fetchPriority="high"
+          wrapperClassName="w-full h-full"
+          className="w-full h-full object-cover"
+        />
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-zinc-950"></div>
       </div>
@@ -25,9 +35,15 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-amber-500/10 rounded-full blur-sm"></div>
               <div className="relative bg-gradient-to-br from-zinc-100 to-zinc-50 rounded-full p-1 border border-amber-600/20">
                 <div className="w-6 h-6 rounded-full overflow-hidden flex items-center justify-center bg-white">
-                  <img
-                    src="https://customer-assets.emergentagent.com/job_d3158cd7-9e2a-4764-8ae8-32eafb7d67a9/artifacts/9wxmcvnh_image.png"
-                    alt="Rajan Wines"
+                  <OptimizedImage
+                    imageId={imageAssets.logo.id}
+                    alt={imageAssets.logo.alt}
+                    width={40}
+                    height={40}
+                    sizes="20px"
+                    widths={[32, 40, 64]}
+                    loading="eager"
+                    wrapperClassName="w-5 h-5 bg-white"
                     className="w-5 h-5 object-contain"
                   />
                 </div>

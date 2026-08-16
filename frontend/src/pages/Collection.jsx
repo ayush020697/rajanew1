@@ -4,6 +4,8 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { productCategories, featuredProducts } from '../mock';
 import { ArrowRight } from 'lucide-react';
+import { OptimizedImage } from '../components/OptimizedImage';
+import { imageAssets } from '../lib/images';
 
 const Collection = () => {
   return (
@@ -13,9 +15,14 @@ const Collection = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1674916084024-50cdd3f6b864"
-            alt="Premium Collection"
+          <OptimizedImage
+            imageId={imageAssets.collectionHero.id}
+            alt={imageAssets.collectionHero.alt}
+            width={imageAssets.collectionHero.width}
+            height={imageAssets.collectionHero.height}
+            sizes="100vw"
+            widths={[640, 960, 1280, 1600]}
+            wrapperClassName="w-full h-full"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -51,9 +58,14 @@ const Collection = () => {
                 className="group bg-zinc-950 border border-zinc-800 rounded-xl overflow-hidden hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-900/20"
               >
                 <div className="aspect-[3/4] overflow-hidden">
-                  <img
-                    src={product.image}
+                  <OptimizedImage
+                    imageId={product.imageId}
                     alt={product.name}
+                    width={600}
+                    height={800}
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    widths={[320, 480, 640, 800]}
+                    wrapperClassName="w-full h-full"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -100,9 +112,14 @@ const Collection = () => {
                 className="group relative overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800 hover:border-amber-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-900/20"
               >
                 <div className="aspect-[3/4] overflow-hidden">
-                  <img
-                    src={category.image}
+                    <OptimizedImage
+                    imageId={category.imageId}
                     alt={category.name}
+                    width={600}
+                    height={800}
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    widths={[320, 480, 640, 800]}
+                    wrapperClassName="w-full h-full"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>

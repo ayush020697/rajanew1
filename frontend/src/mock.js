@@ -134,56 +134,56 @@ export const productCategories = [
     id: 1,
     name: "Whiskey",
     description: "Premium single malts and blended whiskies from around the world",
-    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
+    imageId: "category-whiskey",
     count: "200+ Variants"
   },
   {
     id: 2,
     name: "Scotch & Single Malt",
     description: "Rare Scotch whiskies and refined single malts for the connoisseur",
-    image: "https://images.unsplash.com/photo-1767217667288-8b50f1dc2103",
+    imageId: "category-scotch",
     count: "100+ Variants"
   },
   {
     id: 3,
     name: "Wine",
     description: "Exquisite red, white, sparkling and dessert wines from celebrated vineyards",
-    image: "https://images.unsplash.com/photo-1714377769989-140c9e47fbb9",
+    imageId: "category-wine",
     count: "50+ Variants"
   },
   {
     id: 4,
     name: "Vodka",
     description: "Crystal clear premium vodkas for the perfect cocktail",
-    image: "https://images.unsplash.com/photo-1759912316272-a414bf146476",
+    imageId: "category-vodka",
     count: "50+ Variants"
   },
   {
     id: 5,
     name: "Rum",
     description: "Rich and smooth rums from the Caribbean and beyond",
-    image: "https://images.unsplash.com/photo-1674916084024-50cdd3f6b864",
+    imageId: "category-rum",
     count: "50+ Variants"
   },
   {
     id: 6,
     name: "Gin",
     description: "Botanical gins for craft cocktail enthusiasts",
-    image: "https://images.unsplash.com/photo-1737029114889-8f5edb15b8be",
+    imageId: "category-gin",
     count: "50+ Variants"
   },
   {
     id: 7,
     name: "Beer",
     description: "Premium craft, lager and imported beers from across the globe",
-    image: "https://images.unsplash.com/photo-1732525819066-88074e2d2748",
+    imageId: "category-beer",
     count: "100+ Variants"
   },
   {
     id: 8,
     name: "Liquor",
     description: "Specialty liqueurs and aperitifs for a refined palate",
-    image: "https://images.unsplash.com/photo-1713664060730-fe94cb5df25d",
+    imageId: "category-liquor",
     count: "20+ Variants"
   }
 ];
@@ -195,7 +195,7 @@ export const featuredProducts = [
     category: "Single Malt",
     origin: "Speyside, Scotland",
     description: "Aged 18 years for unrivalled depth, with notes of orange marmalade and toasted oak",
-    image: "https://images.unsplash.com/photo-1767217667288-8b50f1dc2103",
+    imageId: "product-glenlivet-18",
     featured: true
   },
   {
@@ -204,7 +204,7 @@ export const featuredProducts = [
     category: "Single Malt",
     origin: "Haryana, India",
     description: "World-acclaimed Indian single malt with rich tropical fruit and warm spice character",
-    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
+    imageId: "product-indri-single-malt",
     featured: true
   },
   {
@@ -213,7 +213,7 @@ export const featuredProducts = [
     category: "Whiskey",
     origin: "Tennessee, USA",
     description: "Iconic charcoal-mellowed Tennessee whiskey with smooth caramel and vanilla finish",
-    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
+    imageId: "product-jack-daniels-black",
     featured: true
   },
   {
@@ -222,7 +222,7 @@ export const featuredProducts = [
     category: "Blended Scotch",
     origin: "Scotland",
     description: "Johnnie Walker's flagship blend — exceptional rare whiskies layered to perfection",
-    image: "https://images.unsplash.com/photo-1767217667288-8b50f1dc2103",
+    imageId: "product-jw-blue-label",
     featured: true
   },
   {
@@ -231,7 +231,7 @@ export const featuredProducts = [
     category: "Vodka",
     origin: "France",
     description: "Premium French wheat vodka, distilled and bottled in the Cognac region",
-    image: "https://images.unsplash.com/photo-1759912316272-a414bf146476",
+    imageId: "product-grey-goose",
     featured: true
   },
   {
@@ -240,7 +240,7 @@ export const featuredProducts = [
     category: "Gin",
     origin: "Rajasthan, India",
     description: "Bold Indian craft gin layered with Himalayan juniper and exotic native botanicals",
-    image: "https://images.unsplash.com/photo-1737029114889-8f5edb15b8be",
+    imageId: "product-jaisalmer-gin",
     featured: true
   },
   {
@@ -249,7 +249,7 @@ export const featuredProducts = [
     category: "Liquor",
     origin: "Germany",
     description: "Iconic herbal liqueur crafted from 56 botanicals — best served ice cold",
-    image: "https://images.unsplash.com/photo-1713664060730-fe94cb5df25d",
+    imageId: "product-jagermeister",
     featured: true
   },
   {
@@ -258,7 +258,7 @@ export const featuredProducts = [
     category: "Indian Whiskey",
     origin: "India",
     description: "Distinctive Indian whiskey — smooth, mellow and remarkably balanced",
-    image: "https://images.unsplash.com/photo-1746422029293-43065303dab5",
+    imageId: "product-sangam",
     featured: true
   },
   {
@@ -267,7 +267,7 @@ export const featuredProducts = [
     category: "Beer",
     origin: "Thailand",
     description: "Thailand's premium lager — crisp, refreshing and full-bodied",
-    image: "https://images.unsplash.com/photo-1732525819066-88074e2d2748",
+    imageId: "product-singha",
     featured: true
   },
   {
@@ -276,7 +276,7 @@ export const featuredProducts = [
     category: "Breezer / Pint",
     origin: "Belgium",
     description: "Classic Belgian wheat beer with hints of coriander and orange peel",
-    image: "https://images.unsplash.com/photo-1732525819066-88074e2d2748",
+    imageId: "product-hoegaarden",
     featured: true
   }
 ];

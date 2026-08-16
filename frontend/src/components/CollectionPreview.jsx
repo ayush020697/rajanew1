@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { productCategories } from '../mock';
+import { OptimizedImage } from './OptimizedImage';
 
 export const CollectionPreview = () => {
   return (
@@ -27,9 +28,14 @@ export const CollectionPreview = () => {
             >
               {/* Image */}
               <div className="aspect-[3/4] overflow-hidden">
-                <img
-                  src={category.image}
+                <OptimizedImage
+                  imageId={category.imageId}
                   alt={category.name}
+                  width={600}
+                  height={800}
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  widths={[320, 480, 640, 800]}
+                  wrapperClassName="w-full h-full"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
