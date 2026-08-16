@@ -47,13 +47,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
-    if (!API_BASE) {
-      setStatus({
-        state: 'error',
-        message: 'Contact service is not configured. Please try again later.',
-      });
-      return;
-    }
     setStatus({ state: 'submitting', message: '' });
     try {
       const res = await fetch(`${API_BASE}/api/contact`, {

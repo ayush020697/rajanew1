@@ -1,4 +1,4 @@
-const API_BASE = (process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001').replace(/\/+$/, '');
+const API_BASE = (process.env.REACT_APP_BACKEND_URL || '').replace(/\/+$/, '');
 
 const DEFAULT_WIDTHS = [320, 480, 640, 960, 1280];
 
