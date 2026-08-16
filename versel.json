@@ -1,11 +1,16 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "services": {
     "frontend": {
       "root": "frontend/",
-      "framework": "create-react-app"
+      "framework": "create-react-app",
+      "installCommand": "npm install --legacy-peer-deps",
+      "buildCommand": "npm run build",
+      "outputDirectory": "build"
     },
     "backend": {
       "root": "backend/",
+      "framework": "fastapi",
       "entrypoint": "server:app"
     }
   },
