@@ -7,6 +7,7 @@ import asyncio
 import logging
 import resend
 import hashlib
+import tempfile
 from io import BytesIO
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict, EmailStr
@@ -21,16 +22,20 @@ ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
 # MongoDB connection
-mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+mongo_url = os.environ.get('MONGO_URL')
+db_name = os.environ.get('DB_NAME')
+client = AsyncIOMotorClient(mongo_url) if mongo_url else None
+db = client[db_name] if client and db_name else None
 
 # Resend email config
 resend.api_key = os.environ.get('RESEND_API_KEY')
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
 CONTACT_RECIPIENT_EMAIL = os.environ.get('CONTACT_RECIPIENT_EMAIL', 'rajanwines2001@gmail.com')
-IMAGE_CACHE_DIR = ROOT_DIR / ".image-cache"
-IMAGE_CACHE_DIR.mkdir(exist_ok=True)
+IMAGE_CACHE_DIR = Path(
+    os.environ.get("IMAGE_CACHE_DIR")
+    or (Path(tempfile.gettempdir()) / "rajanwines-image-cache" if os.environ.get("VERCEL") else ROOT_DIR / ".image-cache")
+)
+IMAGE_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 IMAGE_FETCH_TIMEOUT = 12
 
 IMAGE_SOURCES = {
@@ -198,6 +203,9 @@ async def optimized_image(
 
 @api_router.post("/status", response_model=StatusCheck)
 async def create_status_check(input: StatusCheckCreate):
+    if db is None:
+        raise HTTPException(status_code=503, detail="Database is not configured")
+
     status_dict = input.model_dump()
     status_obj = StatusCheck(**status_dict)
     
@@ -210,6 +218,9 @@ async def create_status_check(input: StatusCheckCreate):
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
+    if db is None:
+        raise HTTPException(status_code=503, detail="Database is not configured")
+
     # Exclude MongoDB's _id field from the query results
     status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
     
@@ -283,6 +294,9 @@ def _build_email_html(payload: ContactSubmissionCreate, submission_id: str) -> s
 
 @api_router.post("/contact", response_model=ContactSubmissionResponse)
 async def submit_contact(payload: ContactSubmissionCreate):
+    if db is None:
+        raise HTTPException(status_code=503, detail="Database is not configured")
+
     submission_id = str(uuid.uuid4())
     created_at = datetime.now(timezone.utc).isoformat()
 
