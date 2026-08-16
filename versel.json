@@ -1,39 +1,14 @@
 {
-  "services": {
+  "experimentalServices": {
     "frontend": {
-      "root": "frontend/",
-      "framework": "create-react-app"
+      "entrypoint": "frontend",
+      "framework": "create-react-app",
+      "routePrefix": "/"
     },
     "backend": {
-      "root": "backend/",
-      "entrypoint": "server:app"
+      "entrypoint": "backend/server.py",
+      "framework": "fastapi",
+      "routePrefix": "/api"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": {
-        "service": "backend"
-      }
-    },
-    {
-      "source": "/(.*)",
-      "destination": {
-        "service": "frontend"
-      }
-    }
-  ]
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
